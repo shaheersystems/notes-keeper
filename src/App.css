@@ -106,7 +106,7 @@ form {
   width: 650px;
   height: 30vh;
   gap: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
 }
 form input {
@@ -165,4 +165,50 @@ form button:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   display: none;
+}
+.card {
+  min-height: 20vh;
+  padding: 20px;
+  width: 240px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  font-family: "Roboto", calibri;
+  display: flex;
+  flex-direction: column;
+  color: #202124;
+  gap: 15px;
+  border-radius: 5px;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.data h2 {
+  font-weight: 400;
+}
+.cards {
+  min-height: 20vh;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.card span {
+  font-size: 20px;
+  color: #202124;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 100%;
+}
+.card span:hover {
+  background: rgba(0, 0, 0, 0.048);
+}
+.metadata {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
 }
