@@ -48,9 +48,6 @@
   flex: 1;
   font-family: "Fira Code", calibri;
 }
-.searchbar {
-  flex: 2;
-}
 .icons {
   flex: 1;
 }
@@ -104,7 +101,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 650px;
-  height: 30vh;
+  height: 28vh;
   gap: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
@@ -146,30 +143,10 @@ form button:hover {
   background: rgba(0, 0, 0, 0.048);
 }
 
-/* Scroll bar */
-/* width */
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  display: none;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  display: none;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  display: none;
-}
 .card {
   min-height: 20vh;
   padding: 20px;
-  width: 240px;
+  min-width: 240px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   font-family: "Roboto", calibri;
@@ -188,7 +165,9 @@ form button:hover {
   font-weight: 400;
 }
 .cards {
-  min-height: 20vh;
+  min-height: 50vh;
+  align-items: flex-start;
+  justify-content: flex-start;
   max-width: 80%;
   margin: auto;
   display: flex;
@@ -211,4 +190,47 @@ form button:hover {
   align-items: center;
   gap: 10px;
   justify-content: flex-end;
+}
+.empty {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.empty span {
+  color: #c5cdd4;
+  font-size: 100px;
+}
+.empty h1 {
+  font-family: "Roboto", calibri;
+  font-weight: 400;
+  color: #80868b;
+  text-align: centers;
+}
+.footer {
+  min-height: 12vh;
+  border-top: 1px solid #b2b8bd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: "Fira Code", calibri;
+  padding: 20px;
+}
+.social {
+  display: flex;
+  gap: 10px;
+}
+.social a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.social a:hover {
+  color: #0026ff;
+  transition: 0.2s all;
 }

@@ -7,11 +7,10 @@ function Navabar() {
         <div className="logo">
           <h2>NotesKeeper</h2>
         </div>
-        <div className="searchbar">
-          <input type="text" placeholder="Search" />
-        </div>
         <div className="icons">
-          <a href="/">View Github Repo</a>
+          <a href="https://github.com/shaheersystems/notes-keeper">
+            View Git Repo
+          </a>
         </div>
       </div>
     </div>

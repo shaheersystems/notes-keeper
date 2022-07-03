@@ -1,19 +1,35 @@
 import React from "react";
-
-function Card() {
+import { useState } from "react";
+function Card(props) {
+  const [index, setIndex] = useState(0);
+  const color = [
+    "#fafafa",
+    "#f28b82",
+    "#f8bbd0",
+    "#feefc3",
+    "#ff6e40",
+    "#ffbc00",
+    "#1de9b6",
+  ];
   return (
-    <div className="card">
+    <div className="card" id={props.id} style={{ background: color[index] }}>
       <div className="data">
-        <h2>Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at!
-        </p>
+        <h2>{props.title}</h2>
+        <p>{props.note}</p>
       </div>
       <div className="metadata">
-        <span class="material-icons" title="delete note">
+        <span
+          className="material-icons"
+          title="delete note"
+          onClick={props.handleDelete}
+        >
           delete_sweep
         </span>
-        <span class="material-icons" title="change color">
+        <span
+          className="material-icons"
+          title="change color"
+          onClick={() => setIndex(index === 6 ? 0 : index + 1)}
+        >
           palette
         </span>
       </div>
